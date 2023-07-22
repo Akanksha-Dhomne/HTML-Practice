@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classes is javascript</title>
+    </head>
+    <body>
+        <h2>Use of the Class Attribute in Javascript</h2>
+        <p>Click the button to Hide all elements with class name "info":</p>
+
+        <button onclick="myfunction()">Hide Elements</button>
+
+        <h2 class="info">First Dream</h2>
+        <p>Want to become a successful Independent women.</p>
+
+        <h2 class="info">Second Dream</h2>
+        <p>Want to fulfill all the dreams of my parents my family.</p>
+
+        <h2 class="info">Third Dream</h2>
+        <p>Want to fulfill all my dreams and goals.</p>
+
+        <script>
+            function myfunction() {
+                var x = document.getElementsByClassName("info");
+                for(var i = 0; i < x.length; i++)
+                {
+                    x[i].style.display= "none";
+                }
+            }
+        </script>
+    </body>
+</html>
