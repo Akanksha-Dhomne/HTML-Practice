@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <h1>Input Type Text</h1>
+    <h2>Text field</h2>
+    <p><span style="color: red;">input type="text"</span> defines a <b>single-line text input field:</b></p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Password</h1>
+    <h2>Password field</h2>
+    <p><span style="color: red;">input type="password"</span> defines a <b>password field.</b></p>
+
+    <form action="/action_page.php">
+        <label for="username">Username:</label>
+        <input type="text" id="Username" name="username"><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Reset</h1>
+    <h2>Reset Button</h2>
+    <p><span style="color: red;">input type="reset"</span> defines a <b>reset button </b>that will reset all form values to their default values:</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Radio</h1>
+    <h2>Radio Buttons</h2>
+    <p><span style="color: red;">input type="radio"</span> defines a <b>radio button</b></p>
+
+    <form>
+        <input type="radio" id="html" name="fav language" value="HTML">
+        <label for="html">HTML</label><br>
+        
+        <input type="radio" id="css" name="fav language" value="CSS">
+        <label for="html">CSS</label><br>
+
+        <input type="radio" id="php" name="fav language" value="PHP">
+        <label for="php">PHP</label><br>
+
+        <input type="radio" id="c#" name="fav language" value="C#">
+        <label for="c#">C#</label><br>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Checkbox</h1>
+    <h2>Checkboxes</h2>
+    <p><span style="color: red;">input type="checkbox"</span> defibes a <b>Checkbox</b></p>
+
+    <action form="/action_page.php">
+        <input type="checkbox" id="html" name="fav language" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="fav language" value="CSS">
+        <label for="css">css</label><br>
+
+        <input type="checkbox" id="php" name="fav language" value="PHP">
+        <label for="php">PHP</label><br>
+
+        <input type="checkbox" id="javascript" name="fav language" value="Javascript">
+        <label for="javascript">JavaScript</label><br>
+
+        <input type="submit" value="Submit">
+
+        <br>
+        <hr>
+
+    <h1>Input Type Button</h1>
+    <p><span style="color: red;">input type="button"</span>defines a <b>button</b></p>
+
+        <button type="button"
+        onclick="alert('Good morning')">click me!</button>
+        <br>
+        <br>
+        <button type="button"
+        onclick="alert('Danger')">Alert</button>
+
+        <br>
+        <hr>
+
+    <h1>Input Type Color</h1>
+    <h2>Show a color Picker</h2>
+    <p>The <span style="color: red;"> input type="color"</span> is used for input fields that should contain a color.</p>
+
+    <form action="/action_page.php">
+        <label for="favcolor">Select your fav color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#f67f86">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Date</h1>
+    <h2>Data field</h2>
+    <p>The <span style="color: red;">input type="date"</span> is used for input fields that should contain a date.</p>
+
+    <form action="/action_page.php">
+        <label for="birthday">Select your birthday date:</label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Date field Restrictions</h2>
+    <p>Use the <b>min</b> and <b>max</b> attributes to add restributions to dates:</p>
+
+    <form action="/action_page.php">
+        <label for="datemin">Enter a date after 2013-08-06:</label>
+        <input type="date" id="datemin" name="datemin" min="2013-06-08"><nr>
+            <br>
+        <label for="datemax">Enter a date befor 1990-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1990-01-01">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Datetime-local</h1>
+    <h2>local date field</h2>
+    <p>The  <span style="color: red;">input type="datetime-local"</span> specifies a date and time input field, with no time zone.</p>
+
+    <form action="/action_page.php">
+        <label for="birthday-time">Birthday(date and time):</label>
+        <input type="datetime-local" id="birthday-time" name="birthdaytime">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Email</h1>
+    <h2>Email Field</h2>
+    <p>The <span style="color: red;">input type="email"</span> is used for input fields that should contain an e-mail address. </p>
+
+    <form action="/action_page.php">
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Image</h1>
+    <p>The <span style="color: red;">input type="image"</span> defines an image as a submit button.</p>
+    <p>The path to the image is specified in the  <span style="color: red;">src</span> attribute</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="image" src="images/emoji.webp" alt="image" width="48" height="48">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type File</h1>
+    <h2>File upload</h2>
+    <p>The The <span style="color: red;">input type="file"</span> defines a file-select field and a "browser" button file upload.</p>
+
+    <form action="/action_page.php">
+        <label for="myfile">Select your file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Hidden</h1>
+    <h2>A Hidden field</h2>
+    <p>The <span style="color: red;">input type="hidden"</span></p>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <input type="hidden" id="custId" name="custId" value="8602"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Month</h1>
+    <h2>Month field</h2>
+    <p>The <span style="color: red;">input type="month"</span> allows the user to select a month and year.</p>
+
+    <form action="/action_page.php">
+        <label for="birthdaymonth">Birthday(month and year):</label>
+        <input type="month" id="birthdaymonth" name="birthdaymonth">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Number </h1>
+    <h2>Number field</h2>
+    <p>The <span style="color: red;">input type="number"</span> defines a numeric input field.</p>
+    <p>You can use the min and max attributes to add numeric Restrictions in the input field:</p>
+
+    <form action="/action_page.php">
+        <label for="quantity">Quantity(1 and 5):</label>
+        <input type="number" id="quantity" name="quantity">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Restrictions </h1>
+    <h2>Numeric steps</h2>
+    <p>Depending on browser support:fixed steps will apply in the input field: </p>
+    <form action="/action_page.php">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="10" max="30">
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <br>
+    <hr>
+
+    <h1>Input Type Range</h1>
+    <h2>Range field</h2>
+    <p>Depending on browser support: The input type "range" can be displayed as a slider control: </p>
+    <form action="/action_page.php" method="get">
+        <label for="vol">Volumne (between 0 to 50)</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <br>
+    <hr>
+
+    <h1>Input Type Search</h1>
+    <h2>Month field</h2>
+    <p>The <span style="color: red;">input type="search"</span> is used for search fields (a search field behaves like a regular text field).</p>
+
+    <form action="/action_page.php">
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch"><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <br>
+    <hr>
+
+    <h1>Input Type Tel</h1>
+    <h2>Telephone field</h2>
+    <p>The <span style="color: red;">input type="tel"</span> is used for search fields that should contain a telephone number.</p>
+
+    <form action="/action_page.php">
+        <label for="phone">Enter your Phone no:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="[0-9]{4}-[0-9]{7}-[0-9]{3}" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Time</h1>
+    <h2>Telephone field</h2>
+    <p>The <span style="color: red;">input type="time"</span> allows the user to select a time(no time zone).</p>
+
+    <form action="/action_page.php">
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type URL</h1>
+    <h2>URL field</h2>
+    <p>The <span style="color: red;">input type="url"</span>is used fir input fields that should  contain a URL address.</p>
+
+    <form action="/action_page.php">
+        <label for="homepage">Add your Homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>Input Type Week</h1>
+    <h2>Telephone field</h2>
+    <p>The <span style="color: red;">input type="week"</span> allows the user to select a week and year.</p>
+
+    <form action="/action_page.php">
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
