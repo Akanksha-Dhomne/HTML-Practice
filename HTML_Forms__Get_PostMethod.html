@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>Method Attribute</h1>
+        <p>The form-data can be sent as URL variables<strong>(with method="get")</strong> or ad HTTP post transaction <strong>(with method="post").</strong></p>
+        <p>The default HTTP method when submitting form data is <strong>GET.</strong></p>
+
+        <br>
+        <hr>
+
+        <h2><span style="color:tomato">This from will be submitted using the Get method:</span></h2>
+        <p>In get method the data of the page is saves in URL as it is.</p>
+        <p> Here the URL looks like this file:///D:/action_page.php?<span style="color:red;">fname=Akanksha&lname=Dhomne</span></p>
+
+        <form action="/action_page.php" target="_blank" method="get">
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value="Akanksha"><br>
+            <br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Dhomne"><br>
+            <br>
+            <input type="submit" value="Submit">
+
+        <p>After you submit, notice that the form value is visible in the address bar of the new browser tab.</p>
+        </form>
+
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+
+        <h2><span style="color:tomato">This from will be submitted using the POST method:</span></h2>
+        <p> Here the URL looks like this <span style="color:red;">file:///D:/action_page.php</span> information is present but it is in Encrypted form.</p>
+
+
+        <form action="/action_page.php" target="_blank" method="post">
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value="Akanksha"><br>
+            <br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Dhomne"><br>
+            <br>
+            <input type="submit" value="Submit">
+
+        <p>After you submit, notice that unlike the Get method,the form value is Not visible in the address bar of the new browser tab.</p>
+        </form>   
+   
+    </body>
+</html>
