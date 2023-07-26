@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>First program in JavaScript</h1>
+
+       <button type="button"
+       onclick="document.getElementById('demo').innerHTML=Date()">
+       Click me to display Date and Time.
+       </button>
+
+       <p id="demo"></p>
+
+       <hr>
+       <hr>
+
+       <h2>Use javascript to change Text</h2>
+       <p>This example writes "Good Morning!" into an HTML element with id="safe":</p>
+
+       <p id="safe"></p>
+
+       <script>
+        document.getElementById('safe').innerHTML= "Good Morning!";
+       </script>
+       
+       <hr>
+       <hr>
+
+       <h2>Javscript can change the content of an HTML element:</h2>
+
+       <button type="button"
+       onclick="myfunction()">Click Me!</button>
+       <p id="info">Good Morning!</p>
+       <script>
+        function myfunction() {
+            document.getElementById("info").innerHTML= "Have a wonderful Day";
+        }
+       </script>
+    </body>
+    
+       <hr>
+       <hr>
+
+    <!-- <body> 
+       <h3>Javascript can change the content of an HTML element:</h3>
+
+       <button type="button"
+       onclick="myfunction()">Click on the thought to see writers Name.</button>
+       <p id="work">If you want success, you have to start acting, feeling and being successful!</p>
+       <script>
+        function myfunction() {
+            document.getElementById("work").innerHTML= "Matt O'Grady";
+        }
+       </script> -->
+    </body>
+</html>

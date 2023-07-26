@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h1>Javascript program</h1>
+        <p>Here, a javascript changes the value of the scr (source) attribute of an image.</p>
+
+        <script>
+            function light(as) {
+                var pic;
+                if(as == 1) {
+                    pic="pic_bulboff.webp"
+                } else {
+                    pic="pic_bulbon.webp"
+                }
+                document.getElementById('myImage').src = pic;
+            }
+        </script>
+
+        <img id="myimage" src="pic_bulbon.webp" width="200" height="180">
+
+        <p>
+            <button type="button"
+            onclick="light(0)">Light On</button>
+            <button type="button"
+            onclick="light(1)">Light Off</button>
+        </p>
+    </body>
+</html>
