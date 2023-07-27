@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>HTML Input Attributes</h1>
+
+    <h1>The input readonly attribute</h1>
+    <p>The readonly attribute specifies that an input field should be read0only (cannot be changed):</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" value="Elsa" readonly><br>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" value="serry" ><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>The input disabled attribute</h1>
+    <p>The disabled attribute specifies that an input field should be disabled (unusable and unclickablw):</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" value="Elsa" disabled><br>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" value="serry" ><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <br>
+    <hr>
+
+    <h1>The input Size attribute</h1>
+    <p>The Size attribute specifies width (in characters) of an input field:</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <br>
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" size="4" ><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+      
+    <br>
+    <hr>
+
+    <h1>The input Maxlength attribute</h1>
+    <p>The Maxlength attribute specifies the maximum numbers of characters allowed in an input field:</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <br>
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4" ><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>The input min and max attributes</h1>
+    <p>The min and max attributes specify the minimum and maximum values for an input element.</p>
+
+    
+    <form action="/action_page.php">
+        <label for="datemin">Enter a date after 2013-08-06:</label>
+        <input type="date" id="datemin" name="datemin" min="2013-06-08"><nr>
+            <br>
+        <label for="datemax">Enter a date befor 1990-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1990-01-01"><br>
+            <br>
+        <label for="quantity">Quantity (betwwen 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>The input Pattern attribute</h1>
+    <p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+    
+    <form action="/action_page.php">
+            <label for="country_code">Country code:</label>
+            <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{4}" title="Four letter country code"><nr>
+            <input type="submit" value="Submit">
+    </form>
+    
+    <br>
+    <hr>
+
+    <h1>The input Step attribute</h1>
+    <p>The step attribute specifies the legal  number intervals fo an input element.</p>
+    
+    <form action="/action_page.php">
+            <label for="points">points:</label>
+            <input type="number" id="points" name="points" step="4"><nr>
+            <input type="submit" value="Submit">
+    </form>
+    
+    <br>
+    <hr>
+
+    <h1>The input autofocus attribute</h1>
+    <p>The autofocus attribute specifies that the input field should automatically get focus when the page loads:</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" autofocus ><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+   
+    <br>
+    <hr>
+
+    <h1>The input formaction attribute</h1>
+    <p>The formaction attribute specifies the URL of a file that will process the input wten the form is submitted:</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" ><br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form>
+
+    
+    <br>
+    <hr>
+
+    <h1>The input formenctype attribute</h1>
+    <p>The formenctype attribute specifies how form data should be encoded when submitted:</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" ><br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multiple/form-data" value="submit as multiple/form-data">
+    </form>
+
+
+    </body>
+</html>
