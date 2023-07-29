@@ -8,25 +8,24 @@
         <p>Here, a javascript changes the value of the scr (source) attribute of an image:</p>
 
         <script>
-            function light(as) {
+            function icecream(as) {
                 var pic;
                 if(as == 1) {
-                    pic="pic_bulboff.webp"
+                    pic="chocolate_icecream.jpg"
                 } else {
-                    pic="pic_bulbon.webp"
+                    pic="strawberry_icecream.jpg"
                 }
-                document.getElementById('myImage').src = pic;
+                document.getElementById('myimage').src = pic;
             }
         </script>
 
-        <img id="myImage" src="pic_bulbon.webp" width="200" height="180">
+        <img id="myimage" src="chocolate_icecream.jpg" width="200" height="180">
 
         <p>
             <button type="button"
-            onclick="light(0)">Light On</button>
+            onclick="flavour(0)">Chocolate flavour</button>
             <button type="button"
-            onclick="light(1)">Light Off</button>
-        
+            onclick="flavour(1)">Strawberry flavour</button>
         </p>
     </body>
 </html>
